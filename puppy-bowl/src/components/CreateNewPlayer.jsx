@@ -28,16 +28,20 @@ export default function CreateNewPlayer({ players, setPlayers }) {
     <form onSubmit={handleSubmit}>
       {error && <p>{error}</p>}
       {successMessage && <p>{successMessage}</p>}
+      <label>Name: </label>
       <input
         value={name}
         type="text"
         name="name"
+        id="name"
         onChange={(e) => setName(e.target.value)}
       />
+      <label>Breed: </label>
       <input
         value={breed}
         type="text"
         name="breed"
+        id="breed"
         onChange={(e) => setBreed(e.target.value)}
       />
       <button type="submit">Submit</button>
