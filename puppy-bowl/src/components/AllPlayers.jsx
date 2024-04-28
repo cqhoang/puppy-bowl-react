@@ -22,7 +22,7 @@ export default function AllPlayers() {
       }
     }
     getPlayers();
-  }, [error]); // Include error in the dependency array
+  }, [error]);
 
   const displayPlayers = searchParam
     ? players.filter((player) =>
